@@ -19,9 +19,9 @@ Hello, World!
 
 ## Background
 
-In 1980, Ron Cain published a C compiler small enough to fit in a magazine — approximately 2,000 lines of C that could compile a useful subset of the language and, remarkably, compile itself. It was a landmark demonstration that compilers need not be arcane, monolithic systems accessible only to specialists.
+In 1980, Ron Cain published a C compiler small enough to fit in a magazine, approximately 2,000 lines of C that could compile a useful subset of the language and, remarkably, compile itself. It was a landmark demonstration that compilers need not be arcane, monolithic systems accessible only to specialists.
 
-This project is written in that same spirit. The entire compiler — lexer, parser, AST, and bytecode emitter — fits in five Java source files totalling around 1,000 lines. There are no dependencies beyond the Java standard library. The bytecode emitter writes raw JVM class files by hand, building the constant pool, method tables, and instruction stream from scratch.
+This project is written in that same spirit. The entire compiler, lexer, parser, AST, and bytecode emitter, fits in five Java source files totalling around 1,000 lines. There are no dependencies beyond the Java standard library. The bytecode emitter writes raw JVM class files by hand, building the constant pool, method tables, and instruction stream from scratch.
 
 It is intended as an educational tool for anyone who wants to understand how a real compiler works, from source characters to executable bytecode, without the noise of a production system.
 
@@ -33,34 +33,34 @@ It is intended as an educational tool for anyone who wants to understand how a r
 
 | Feature | Supported |
 |---|---|
-| `int` and `char` scalar variables | ✅ |
-| `int[]` and `char[]` arrays | ✅ |
-| Global and local variables | ✅ |
-| Functions with parameters | ✅ |
-| `void`, `int`, `char` return types | ✅ |
-| `if` / `else` | ✅ |
-| `while` loop | ✅ |
-| `do` / `while` loop | ✅ |
-| `for` loop | ✅ |
-| `break` and `continue` | ✅ |
-| `return` | ✅ |
-| Arithmetic: `+ - * / %` | ✅ |
-| Bitwise: `& \| ^ ~ << >>` | ✅ |
-| Logical: `&& \|\| !` | ✅ |
-| Relational: `== != < <= > >=` | ✅ |
-| Assignment: `= += -= *= /=` | ✅ |
-| Pre/post increment and decrement: `++ --` | ✅ |
-| Integer, character and string literals | ✅ |
-| Hexadecimal literals (`0x1F`) | ✅ |
-| Recursive functions | ✅ |
-| Line (`//`) and block (`/* */`) comments | ✅ |
-| Built-in: `putchar()`, `printf()`, `exit()` | ✅ |
-| Pointers | ❌ |
-| `struct` / `union` | ❌ |
-| `float` / `double` | ❌ |
-| Preprocessor (`#define`, `#include`) | ❌ |
-| `switch` / `case` | ❌ |
-| Multiple source files | ❌ |
+| `int` and `char` scalar variables | Yes |
+| `int[]` and `char[]` arrays | Yes |
+| Global and local variables | Yes |
+| Functions with parameters | Yes |
+| `void`, `int`, `char` return types | Yes |
+| `if` / `else` | Yes |
+| `while` loop | Yes |
+| `do` / `while` loop | Yes |
+| `for` loop | Yes |
+| `break` and `continue` | Yes |
+| `return` | Yes |
+| Arithmetic: `+ - * / %` | Yes |
+| Bitwise: `& \| ^ ~ << >>` | Yes |
+| Logical: `&& \|\| !` | Yes |
+| Relational: `== != < <= > >=` | Yes |
+| Assignment: `= += -= *= /=` | Yes |
+| Pre/post increment and decrement: `++ --` | Yes |
+| Integer, character and string literals | Yes |
+| Hexadecimal literals (`0x1F`) | Yes |
+| Recursive functions | Yes |
+| Line (`//`) and block (`/* */`) comments | Yes |
+| Built-in: `putchar()`, `printf()`, `exit()` | Yes |
+| Pointers | No |
+| `struct` / `union` | No |
+| `float` / `double` | No |
+| Preprocessor (`#define`, `#include`) | No |
+| `switch` / `case` | No |
+| Multiple source files | No |
 
 ### Compiler Features
 
